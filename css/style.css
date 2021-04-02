@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+/***************************
+    Header section css
+***************************/
+
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+.logo {}
+.logo img{}
+.menu {
+    text-align: right;
+}
+.top-con {
+}
+.top-con img {
+    vertical-align: middle;
+}
+.top-con span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3d2514;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.menu-item {
+    margin-top: 16px;
+}
+.menu-item ul li {
+    display: inline-block;
+    list-style: none;
+}
+.menu-item ul li a {
+    text-transform: uppercase;
+    margin-left: 26px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: 3px;
+}
+.menu-item ul li a:hover {
+    cursor: pointer;
+}
+
+
+/****************************
+        banner section css
+*****************************/
+
+
+.banner {
+    width: 100%;
+    padding: 102px 0px 0px 0px;
+    background: url(../image/top-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+.content {
+    display: flex;
+}
+.content-left {
+    flex-basis: 50%;
+}
+.inner-item {
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner-item span {
+    font-family: 'Bebas Neue', cursive;
+    border: 2px dashed #3d2514;
+    padding: 10px;
+    color: #3d2514;
+    font-size: 23px;
+}
+.inner-item h1 {
+    font-size: 114px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    text-shadow: 4px 4px #fee8bb;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.inner-item h2 {
+    font-size: 56px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    text-shadow: 4px 4px #fee8bb;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.content-right {
+    flex-basis: 50%;
+    position: relative;
+    
+}
+.content-right img {
+    margin-top: 60px;
+}
+.price {
+    height: 175px;
+    width: 175px;
+    background: #bf2222;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 23%;
+    left: 8%;
+    font-family: 'Montserrat', sans-serif;
+}
+.tag {
+    border-radius: 50%;
+    border: 2px dashed #fff;
+    width: 145px;
+    height: 145px;
+    text-align: center;
+    margin: 13px;
+    color: #fff;
+}
+.tag i {
+    font-size: 56px;
+    color: #fff;
+}
+.tag span {
+    font-size: 56px;
+    color: #fff;
+}
+.tag p {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 20px 0px 0px 10px;
+    letter-spacing: 3px;
+}
+
+/***************************
+        gallery-area css
+***************************/
+
+.gallery-area {
+    padding-top: 80px;
+    width: 100%
+}
+.gallery {
+    display: flex;
+}
+.g-left {
+    flex-basis: 50%;
+}
+.g-img {
+    position: relative;
+    margin: 0px 15px 0px 15px;
+}
+.g-img img {
+    max-width: 100%;
+
+}
+.g-text {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+}
+.g-text h3 {
+    font-size: 25px;
+}
+.g-text h1 {
+    font-size: 41px;
+}
+.g-right {
+    flex-basis: 50%;
+}
+.g-img-mar {
+    margin-bottom: 29px;
+}
+
+
+/**************************
+    service section css
+**************************/
+.service-area {
+    padding-top: 80px;
+    width: 100%
+}
+.service {
+    text-align: center;
+}
+.service-top {}
+.service-button {}
+.service-button button {
+    background: #ffc045;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+.service-button button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background: #bf2222;
+    transition: 0.5s;
+    z-index: -2;
+    border-radius: 0px 50px 0px 50px;
+}
+.service-button button:hover::before {
+    height: 100%;
+    transition: 0.5s;
+}
+.service-button button:hover {
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+.service-top h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    color: #3d2514;
+    padding: 20px 0px;
+}
+.service-top p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3d2514;
+}
+.service-bottom {
+    display: flex;
+    padding-top: 50px;
+}
+.burger {}
+.burger img {
+    max-width: 100%;
+}
+.burger h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    font-size: 37px;
+}
+.burger p {
+    font-family: 'Montserrat', sans-serif;
+    color: #3d2514;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.burger button {
+    background: #bf2222;
+    color: #fff;
+    padding: 10px 25px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+.burger button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    right: 0;
+    background: #edb443;
+    transition: 0.5s;
+    z-index: -2;
+    border-radius: 50px 0px 50px 0px;
+}
+.burger button:hover::before {
+    height: 100%;
+    transition: 0.5s;
+}
+.burger button:hover {
+    color: #bf2222;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+/******************************
+    burger slider section css
+******************************/
+
+
+.burger-slider {
+    width: 100%;
+    padding-top: 80px;
+}
+.slider {
+    display: flex;
+    padding: 20px;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.3);
+}
+.slider-left {
+    padding: 70px 20px;
+    flex-basis: 50%;
+}
+.slider-left h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    font-size: 29px;
+}
+.slider-left h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    font-size: 41px;
+    margin-bottom: 20px;
+}
+.slider-left p {
+    font-family: 'Montserrat', sans-serif;
+    color: #3d2514;
+    font-size: 20px;
+}
+.slider-right {
+    flex-basis: 50%;
+}
+.slider-right img {
+    max-width: 100%;
+}
+
+
+/*****************************
+    order-form section css
+******************************/
+
+.order-form {
+    padding: 100px 0px;
+}
+.order {
+    text-align: center;
+    position: relative;
+}
+.order-text {}
+.order-text h3 {
+    color: #3d2514;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 29px;
+}
+.order-text h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    font-size: 50px;
+}
+.from-from {}
+.form-1 {}
+.form-1 form{}
+.form-1 form input {
+    width: 235px;
+    padding: 15px 20px;
+    margin: 25px 10px 0px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-1 form input::placeholder {
+    font-family: 'Bebas Neue', cursive;
+}
+.form-1 form input:focus {
+    outline: none;
+}
+.form-1 form button {
+    width: 280px;
+    margin: 0px 8px 0px 10px;
+    padding: 11px 0px;
+    border: none;
+    background: #bf2222;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.form-1 form button:hover {
+    cursor: pointer;
+}
+
+.sing-burger {
+    position: absolute;
+    top: -34%;
+}
+.bottol {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+.bottol img{}
+.plate {
+    position: absolute;
+    right: 0%;
+    top: 25%;
+}
+.plate img {
+    width: 270px;
+}
+
+
+/*********************************
+    footer section css
+**********************************/
+
+.footer-area {
+    padding: 50px 0px;
+}
+.footer {
+    width: 100%;
+    background: url(../image/b.b.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+}
+.footer-left {
+    flex-basis: 50%;
+    padding: 50px 0px 0px 30px;
+}
+.footer-l-top {}
+.footer-l-top img{}
+.footer-l-top p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 0px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.footer-l-bottom {}
+.footer-l-bottom p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    padding: 65px 0px 20px 0px;
+}
+.footer-l-bottom p i{}
+.footer-right {
+    flex-basis: 50%;
+    position: relative;
+}
+.footer-r-top {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer-r-top h5 {
+    line-height: 40px;
+}
+.footer-r-top h5 img {
+    padding-right: 25px;
+    vertical-align: middle;
+}
+.footer-r-bottom {
+    right: 3%;
+    position: absolute;
+    bottom: 3%;
+}
+.arro {}
+.footer-r-bottom ul li {
+    list-style: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+.footer-r-bottom ul li a{}
+.footer-r-bottom ul li a i{}
